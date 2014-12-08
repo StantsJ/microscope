@@ -8,11 +8,11 @@ Template.postSubmit.events({
     };
 
     Meteor.call('postInsert', post, function(error, result) {
-      // display the error to the uset then abort
+      // display the error to the user then abort
       if (error) {
         return alert(error.reason);
       }
-      
+
       if (result.postExists) {
         alert('This link has already been posted');
       }

@@ -1,5 +1,5 @@
 Template.postEdit.events({
-  'Submit Form': function(e) {
+  'submit form': function(e) {
     e.preventDefault();
 
     var currentPostId = this._id;
@@ -18,7 +18,7 @@ Template.postEdit.events({
     });
   },
 
-  'click delete': function(e) {
+  'click .delete': function(e) {
     e.preventDefault();
 
     if (confirm("Delete this post?")) {
